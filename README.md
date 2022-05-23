@@ -1,2 +1,2 @@
-# aws-site
-AWS website using html
+# Practice Repository
+Learning how to use git/github
