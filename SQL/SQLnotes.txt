@@ -1,0 +1,12 @@
+create table cars (model varchar(50), color varchar(50), year int)
+
+insert into cars values('honda', 'blue', 2009)
+
+sqlzoo
+
+select color from dealer, cars
+where dealer.model = cars.model
+
+country: name, age, population
+prosperity: age, income, country
+
