@@ -1,0 +1,280 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git init -b main
+Initialized empty Git repository in C:/Users/jayra/OneDrive/Documents/Github_projects/.git/
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> dir -h
+
+
+    Directory: C:\Users\jayra\OneDrive\Documents\Github_projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--         5/22/2022  10:52 PM                .git
+
+
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> dir
+
+
+    Directory: C:\Users\jayra\OneDrive\Documents\Github_projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/22/2022  10:29 PM                OS
+d-----         5/22/2022  10:28 PM                SQL
+
+
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'jayra@LAPTOP-B8SS1DFF.(none)')
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git config --global user.email "jayrathore44@gmail.com"
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git config --global user.name "Jay Rathore"
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git commit -m "initial commit"                        [main (root-commit) b91b892] initial commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 SQL/SQLnotes.txt
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git remote add origin git@github.com:jayr434/aws-site.git
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> git push origin main
+The authenticity of host 'github.com (140.82.113.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes         
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\jayra\OneDrive\Documents\Github_projects> cd ~
+PS C:\Users\jayra> dir -h
+
+
+    Directory: C:\Users\jayra
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d--h--          4/6/2022  12:55 AM                AppData
+d--hsl          4/6/2022  12:55 AM                Application Data
+d--hsl          4/6/2022  12:55 AM                Cookies
+d--hs-         5/21/2022  11:37 PM                IntelGraphicsProfiles
+d--hsl          4/6/2022  12:55 AM                Local Settings
+d--hsl          4/6/2022  12:55 AM                My Documents
+d--hsl          4/6/2022  12:55 AM                NetHood
+d--hsl          4/6/2022  12:55 AM                PrintHood
+d--hsl          4/6/2022  12:55 AM                Recent
+d--hsl          4/6/2022  12:55 AM                SendTo
+d--hsl          4/6/2022  12:55 AM                Start Menu
+d--hsl          4/6/2022  12:55 AM                Templates
+-a-h--         5/18/2022  11:19 AM       11272192 NTUSER.DAT
+-a-hs-          4/6/2022  12:55 AM        2832384 ntuser.dat.LOG1
+-a-hs-          4/6/2022  12:55 AM        2936832 ntuser.dat.LOG2
+-a-hs-         4/30/2022   5:31 PM        1048576 NTUSER.DAT{fdc2555b-b56d-11ec-97e1-d180ec8dfb45}.TxR.0.re 
+                                                  gtrans-ms
+-a-hs-         4/30/2022   5:31 PM        1048576 NTUSER.DAT{fdc2555b-b56d-11ec-97e1-d180ec8dfb45}.TxR.1.re
+                                                  gtrans-ms
+-a-hs-         4/30/2022   5:31 PM        1048576 NTUSER.DAT{fdc2555b-b56d-11ec-97e1-d180ec8dfb45}.TxR.2.re 
+                                                  gtrans-ms
+-a-hs-         4/30/2022   5:31 PM          65536 NTUSER.DAT{fdc2555b-b56d-11ec-97e1-d180ec8dfb45}.TxR.blf  
+-a-hs-          4/6/2022  12:55 AM          65536 NTUSER.DAT{fdc2555c-b56d-11ec-97e1-d180ec8dfb45}.TM.blf   
+-a-hs-          4/6/2022  12:55 AM         524288 NTUSER.DAT{fdc2555c-b56d-11ec-97e1-d180ec8dfb45}.TMContai 
+                                                  ner00000000000000000001.regtrans-ms
+-a-hs-          4/6/2022  12:55 AM         524288 NTUSER.DAT{fdc2555c-b56d-11ec-97e1-d180ec8dfb45}.TMContai
+                                                  ner00000000000000000002.regtrans-ms
+---hs-          4/6/2022  12:58 AM             20 ntuser.ini
+
+
+PS C:\Users\jayra> cd .ssh
+PS C:\Users\jayra\.ssh> ls
+
+
+    Directory: C:\Users\jayra\.ssh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         5/22/2022  11:03 PM             92 known_hosts
+
+
+PS C:\Users\jayra\.ssh> ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\jayra/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in C:\Users\jayra/.ssh/id_rsa.
+Your public key has been saved in C:\Users\jayra/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:mhFHasJz5lwlJAG3YWzJT9Ve/sYpyyT9aZL46xxkrrg jayra@LAPTOP-B8SS1DFF
+The key's randomart image is:
++---[RSA 3072]----+
+|    .+*++.o.     |
+|   . o=*.o  . .  |
+|    +.Boo  . o   |
+|     O +.   . .  |
+|      + S   .o o.|
+|       +   .++ .+|
+|      o     =o=..|
+|          ..o=.+ |
+|         E..o=+  |
++----[SHA256]-----+
+PS C:\Users\jayra\.ssh> dir
+
+
+    Directory: C:\Users\jayra\.ssh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         5/22/2022  11:08 PM           2610 id_rsa
+-a----         5/22/2022  11:08 PM            576 id_rsa.pub
+-a----         5/22/2022  11:03 PM             92 known_hosts
+
+
+PS C:\Users\jayra\.ssh> cd id_rsa.pub 
+cd : Cannot find path 'id_rsa.pub' because it does not exist.
+At line:1 char:1
++ cd id_rsa.pub
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (id_rsa.pub:String) [Set-Location], ItemNotFoundException     
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\jayra\.ssh> type id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCX5QDtZIneJMdkC3OgW2qatdK+/R6Iyrl1+rypKC/czYhY6Mc53bzOLkb2dQ66tEVpNjx84pXHOGnT0wpZKAaav764k1BC/ZziEqTo3IHhyEUdRaFWJJFdMvI0Xp2mvTk+jwJuBf/qU0EMboUwtc06wred11LdGgs8P2fwakeE9rbYvdH1ThGU/3zZCMeTZe8jL4WI2BUFPgJxaSg6/ES2DOfd1mc5dGsl30cAFEjqWBQIoVXe+JsJ6eeDWluo48/A2jATUSGlfimnR+7K4IajF8C0uXiuRBe6bwMho0WsXZ4V0h/W0OZGIixJWzQyH9d71wjkaQTGGsDlag+QrmnZv/a3j17PoAn6/KbCCd4X895fM8QAFuRrgSJiUEMvabCK8LigWOmmL1IzzcAqyXvq5LL6JPVpmi5wrtL+Efufnm3ApAbTOYBHNswSFCpqffwLz3bLcvNrj/5vpJIbxYj/6uKggW3qlWwnr1gqxy5CzRvHSpcHdZWHKi40lvXYOB0= jayra@LAPTOP-B8SS1DFF
+PS C:\Users\jayra\.ssh> cd Onedrive
+cd : Cannot find path 'C:\Users\jayra\.ssh\Onedrive' because it does not exist.
+At line:1 char:1
++ cd Onedrive
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\jayra\.ssh\Onedrive:String) [Set-Location], ItemNo  
+   tFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\jayra\.ssh> cd ..
+PS C:\Users\jayra> cd Onedrive
+PS C:\Users\jayra\Onedrive> cd documents
+PS C:\Users\jayra\Onedrive\documents> cd github_projects
+PS C:\Users\jayra\Onedrive\documents\github_projects> pwd
+
+Path
+----
+C:\Users\jayra\Onedrive\documents\github_projects
+
+
+PS C:\Users\jayra\Onedrive\documents\github_projects> ls
+
+
+    Directory: C:\Users\jayra\Onedrive\documents\github_projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/22/2022  10:29 PM                OS
+d-----         5/22/2022  10:28 PM                SQL
+
+
+PS C:\Users\jayra\Onedrive\documents\github_projects> git remote add origin git@github.com:jayr434/aws-site.git
+error: remote origin already exists.
+PS C:\Users\jayra\Onedrive\documents\github_projects> git push origin main                                  To github.com:jayr434/aws-site.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:jayr434/aws-site.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\jayra\Onedrive\documents\github_projects> git pull origin main 
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+Unpacking objects: 100% (3/3), 612 bytes | 32.00 KiB/s, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+From github.com:jayr434/aws-site
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+fatal: refusing to merge unrelated histories
+PS C:\Users\jayra\Onedrive\documents\github_projects> git push origin main 
+To github.com:jayr434/aws-site.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:jayr434/aws-site.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\jayra\Onedrive\documents\github_projects> git pull --rebase origin main
+From github.com:jayr434/aws-site
+ * branch            main       -> FETCH_HEAD
+Successfully rebased and updated refs/heads/main.
+PS C:\Users\jayra\Onedrive\documents\github_projects> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 490 bytes | 490.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:jayr434/aws-site.git
+   d38662e..0690bdd  main -> main
+PS C:\Users\jayra\Onedrive\documents\github_projects>
